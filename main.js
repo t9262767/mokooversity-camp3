@@ -1,10 +1,9 @@
 (function (){
-	var canvas = document.getElementById("game");
-	var ctx = canvas.getContext('2d');
-
-	var ballX =Math.random()*300;
-	var ballY =Math.random()*300;
-	var ballR =Math.random()*100;
+	var canvas = document.getElementById("game"),
+	ctx = canvas.getContext('2d'),
+	ballX =Math.random()*300,
+	ballY =Math.random()*300,
+	ballR =Math.random()*100;
 
 	canvas.width = 480;
 	canvas.height = 320;
