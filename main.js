@@ -23,7 +23,7 @@ var gameModule = (function (){
 		if(counter >=10){
 
 		}else{
-			timeoutVar = setTimeout(start,1000)
+			timeoutVar = setTimeout(start,1000);
 			counter=counter+1;
 			console.log("Counter: "+counter);
 		}	
