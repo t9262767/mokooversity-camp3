@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -58,7 +59,7 @@
 </div>
 
 
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	
 	<h1>Hello!WORLD!</h1>
 
 	<div class="row">
@@ -69,15 +70,19 @@
 
 <script>
 (function (){
-	var canvas = document.getElementById("game")
+	var canvas = document.getElementById("game");
 	var ctx = canvas.getContext('2d');
+
+	var ballX =Math.random()*300;
+	var ballY =Math.random()*300;
+	var ballR =Math.random()*100;
 
 	canvas.width = 480;
 	canvas.height = 320;
 	
 	ctx.fillStyle = 'black';
 	ctx.beginPath();
-	ctx.arc(100, 150, 50, 0, Math.PI * 2 , true);
+	ctx.arc(ballX, ballY, ballR, 0, Math.PI * 2 , true);
 	ctx.fill();
 
 }) ();
