@@ -16,8 +16,8 @@ var gameModule = (function (){
 			b = Math.ceil(Math.random()*255),
 			c = Math.ceil(Math.random()*255);
 
-		canvas.width = 480;
-		canvas.height = 320;
+		canvas.width = 430;
+		canvas.height = 300;
 		
 		ctx.fillStyle = "rgb("+a+","+b+","+c+")";
 		ctx.beginPath();
